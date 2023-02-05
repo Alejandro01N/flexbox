@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- el my-# (margen en el eje y) es un espacio tipo como un margin que le damos a esa clase -->
+        <div class="row my-5">
+            <div class="col">
+                <h4>Tipos de displey flex</h4>
+                <hr>
+
+                <!-- 
+                    Podemos establecer que tipo de elemento flexbox sera, de tipo block o inline,
+                    y poodemos establecer tamnien desde que dispositivo lo ser 
+
+                    .d-flex
+                    .d-inline-flex
+
+                    .d-sm-flex
+                    .d-sm-inline-flex
+                    .d-md-flex
+                    .d-md-inline-flex
+                    .d-lg-flex
+                    .d-lg-inline-flex
+                    .d-xl-flex
+                    .d-xl-inline-flex
+                 -->
+
+
+
+
+                <!-- Nos va a permitir que los elementos que este dentro de este contenedor que tiene d-flex se van a poder acomodar con flexbox -->
+                <div class="bg-primary text-white p-3 d-flex">
+                    <p class="mb-0">display Flex <strong>.d-flex </strong></p>
+                    
+                </div>
+
+                <br>
+
+                <!-- Aca podemos observar que con el d-inline-flex no abarcamos el 100% del contenedor, solo abarcamos el espacion necesotado -->
+
+                <div class="bg-primary text-white p-3 d-inline-flex">
+                    <p class="mb-0">display Flex <strong>.d-inline-flex </strong></p>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row my-5">
+            <div class="col">
+                <h4>Direction</h4>
+                <hr> 
+
+                <!-- 
+                    Variantes
+                    .flex-row
+                    .flex-row-reverse
+
+                    .flex-colomn
+                    .flex-colomn-reverse
+
+                    sm | md | lg | xl | xxl
+
+                    .flex-x-row
+                    .flex-x-row-reverse
+                    .flex-x-colomn
+                    .flex-x-colomn-reverse
+                 -->
+                
+                <p>.flex-row</p>
+                <!-- Con el elemento d-flex los elemoentos hijos solo abarcan lo que necesitan pero teniendo aun el 100% de su contenedor a diferencia del 
+                d-inline-flex que solo abarca lo que necesita -->
+                <div class="contenedor mb-20 bg-primary text-white d-flex flex-row">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                </div>
+
+                <p>.flex-row con inline</p>
+                <!-- Con el elemento d-flex los elemoentos hijos solo abarcan lo que necesitan pero teniendo aun el 100% de su contenedor a diferencia del 
+                d-inline-flex que solo abarca lo que necesita -->
+                <div class="contenedor mb-20 bg-primary text-white d-inline-flex flex-row">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                </div>
+
+                <p>.flex-row-reverse</p>
+               <!-- Hace la misma funcion del anterior flex solo que este ordena los cuadro de derecha a izquierda-->
+                <div class="contenedor mb-20 bg-primary text-white d-flex flex-row-reverse">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                </div>
+
+                <p>.flex-row-reverse con inline</p>
+               <!-- Hace la misma funcion del anterior flex solo que este ordena los cuadro de derecha a izquierda-->
+                <div class="contenedor mb-20 bg-primary text-white d-inline-flex flex-row-reverse">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                </div>
+
+                <p>.flex-column</p>
+               <!-- Vemos que cada caja abarca el 100% -->
+                <div class="contenedor mb-20 bg-primary text-white d-flex flex-column">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                </div>
+
+                <p>.flex-column con inline</p>
+                
+                 <div class="contenedor mb-20 bg-primary text-white d-inline-flex flex-column">
+                     <div class="">caja 1</div>
+                     <div class="">caja 2</div>
+                     <div class="">caja 3</div>
+                 </div>
+
+                 <p>.flex-column-reverse</p>
+                
+                 <div class="contenedor mb-20 bg-primary text-white d-flex flex-column-reverse">
+                     <div class="">caja 1</div>
+                     <div class="">caja 2</div>
+                     <div class="">caja 3</div>
+                 </div>
+
+                 <p>.flex-column-reverse con inline</p>
+                
+                 <div class="contenedor mb-20 bg-primary text-white d-inline-flex flex-column-reverse">
+                     <div class="">caja 1</div>
+                     <div class="">caja 2</div>
+                     <div class="">caja 3</div>
+                 </div>
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col">
+                <h4>justify Content</h4>
+                <hr>
+
+                <!-- 
+                    Variantes
+
+                    .justify-content-start
+                    .justify-content-center
+                    .justify-content-end
+                    .justify-content-between
+                    .justify-content-around
+                    .justify-content-evenly
+
+                    sm | md | lg | xl | xxl
+
+                    .justify-content-x-start
+                    .justify-content-x-center
+                    .justify-content-x-end
+                    .justify-content-x-between
+                    .justify-content-x-around
+                    .justify-content-x-evenly
+
+                 -->
+
+                <p>.justify-content-start</p>
+                <!-- Nos permite que el flex inicie desde el principio esta viene por defecto -->
+                <div class="contenedor mb-20 text-white bg-primary d-flex justify-content-start">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                </div>
+
+                <p>.justify-content-start con inline</p>
+
+                <div class="contenedor mb-20 text-white bg-primary d-inline-flex justify-content-start">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                </div>
+
+                <p>.justify-content-center</p>
+                <!-- Nos ubica el flex en el centro del contenedor -->
+                <div class="contenedor mb-20 text-white bg-primary d-flex justify-content-center">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                </div>
+
+                <p>.justify-content-center con inline</p>
+                
+                <div class="contenedor mb-20 text-white bg-primary d-inline-flex justify-content-center">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                </div>
+
+                <p>.justify-content-end</p>
+                <!-- Nos ubica el flex al final -->
+                <div class="contenedor mb-20 text-white bg-primary d-flex justify-content-end">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                </div>
+
+                <p>.justify-content-end</p>
+                
+                <div class="contenedor mb-20 text-white bg-primary d-inline-flex justify-content-end">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                </div>
+
+                <p>.justify-content-between</p>
+                <!-- Este flex nos permite poner las cajas con un espacio preterminado, teniendo en cuenta que la primera esta al inicio
+                y la ultima al final -->
+                <div class="contenedor mb-20 text-white bg-primary d-flex justify-content-between">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                    <div class="">caja 4</div>
+                </div>
+
+                <p>.justify-content-between con inline</p>
+                
+                <div class="contenedor mb-20 text-white bg-primary d-inline-flex justify-content-between">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                    
+                </div>
+
+                <p>.justify-content-around</p>
+                <!-- A diferencia del between este nos distribuye el espacio a todos por igual tanto como a la derecha
+                como a la izquierda -->
+                <div class="contenedor mb-20 text-white bg-primary d-flex justify-content-around">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                    <div class="">Caja 4</div>
+                </div>
+
+                <p>.justify-content-around con inline</p>
+                
+                <div class="contenedor mb-20 text-white bg-primary d-inline-flex justify-content-around">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                </div>
+
+                <p>.justify-content-evenly</p>
+                <!-- Aca ponemos el felx a que distribuya los espacio todos por igual -->
+                <div class="contenedor mb-20 text-white bg-primary d-flex justify-content-evenly">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                    <div class="">Caja 4</div>
+                </div>
+
+                <p>.justify-content-evenly con inline</p>
+                
+                <div class="contenedor mb-20 text-white bg-primary d-inline-flex justify-content-evenly">
+                    <div class="">caja 1</div>
+                    <div class="">caja 2</div>
+                    <div class="">caja 3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
